@@ -1,0 +1,57 @@
+function media (n1,n2) {
+    
+    var nota1 = n1;
+    var nota2 = n2;
+    var media = (nota1 + nota2) / 2;
+    console.log(media)
+}
+
+media(10, 8)
+media(3, 8)
+media(10, 4)
+
+                                      ou
+
+function media (n1,n2) { 
+     
+    var nota1 = n1; 
+    var nota2 = n2; 
+    var media = (nota1 + nota2) / 2;                                          return= Consolida o valor para usar posteriormente.
+    return media; 
+} 
+
+
+var m = media; 
+var aluno1 = m(10, 8) 
+var aluno2 = m(3, 8) 
+var aluno3 = m(10, 4) 
+console.log(aluno1) 
+console.log(aluno2) 
+console.log(aluno3)
+
+                                    ou
+var media = function(n1,n2) { 
+    return (n1+n2) /2; 
+} 
+console.log(media(10,8)) 
+console.log(media(3,8)) 
+console.log(media(10,4))
+
+
+                                    ou
+var media = (n1,n2) => { 
+    return (n1+n2) /2; 
+} 
+var m = media; 
+console.log(m(10,8))                                                                ARROW FUNCTIOn
+console.log(m(3,8)) 
+console.log(m(10,4))
+> 
+9 
+5.5 
+7
+
+
+obs: sempre usar virgula para separar os elementos da function
+obs2: cada elemento da function puxando como um argumento vira uma váriavel organizada, como: 1,2,3,4,5 ... 
+obs3: sempre colocar parênteses na função.

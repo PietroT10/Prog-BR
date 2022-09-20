@@ -1,0 +1,74 @@
+Array, é uma estrutura de dados que pode armazenar vários dados em sequência, todo array começa na posição 0.
+	
+	
+Formas de chamar o array:
+```
+var alunos = new Array("igor", "josé", "marcos");
+console.log(alunos);
+[ 
+"igor", 
+"josé", 
+"marcos" 
+]
+```
+
+```
+var alunos = ["igor", "josé", "marcos"];
+console.log(alunos)
+
+[ 
+"igor", 
+"josé", 
+"marcos" 
+]
+```
+
+```
+var alunos = ["igor", "josé", "marcos"];
+for( var i = 0; i < alunos.length; i++) {
+
+console.log(alunos[i]);
+}
+             ou
+
+var alunos = ["igor", "josé", "marcos"];                                            in = índice /  index = puxa o número da array.
+for( var i in alunos) {                                                             of =  . .  . = puxa o elemento em si da array. 
+ 
+console.log(alunos[i]) 
+}
+
+[  
+"igor",  
+"josé",  
+"marcos"  
+]
+```
+
+Usando um objeto
+
+```
+var media = (n1,n2) => {
+return (n1+n2)/2;
+}
+var aluno1 = { 
+nome: "Pietro", 
+nota1: 7.6,
+nota2: 5.6
+
+}
+var aluno2 = {
+nome: "Totti",
+nota1: 7.6,
+nota2:4.8,
+
+}
+aluno1.matricula = "122181";
+aluno2.matricula = "12212121";
+console.log (aluno1," com média ", media(aluno1.nota1, aluno1.nota2))
+console.log (aluno2," com média ", media(aluno2.nota1, aluno2.nota2))
+        
+
+
+{nome: 'Pietro', nota1: 7.6, nota2: 5.6, matricula: '122181'} ' com média ' 6.6
+{nome: 'Totti', nota1: 7.6, nota2: 4.8, matricula: '12212121'} ' com média ' 6.199999999999999
+```

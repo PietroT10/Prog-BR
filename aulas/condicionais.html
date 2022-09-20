@@ -1,0 +1,143 @@
+```
+ar idade = 19;
+
+if (idade > 18) {
+console.log("pode")
+}
+else  {
+console.log("não pode")
+}
+```
+
+usando mais de uma condição.
+```
+var idade = 72;
+
+if (idade >= 35 && idade < 70) {
+
+console.log("pode") 
+console.log("Qual o seu pedido?") 
+
+} 
+else if (idade >= 18 && idade < 35) { 
+  
+  console.log("Pode, mostre a identidade.") 
+
+} 
+else { 
+   
+ console.log("Não pode, o senhor é muito velho") 
+
+}
+```
+
+
+Operador ternário
+
+```
+var idade = 18;
+var pode = idade >= 18 ? true : false;
+console.log(pode)
+
+true
+```
+
+```
+var idade = 17;
+var pode = idade >= 18 ? true : false;
+console.log(pode)
+
+false
+```
+- a interrogação(?) funciona se o valor requerido for verdadeiro
+
+Switch (case)
+```
+var nota1 = 8.0;
+var nota2 = 8.8;
+var media = (nota1 + nota2) /2;
+var conceito= ""
+if (media >= 8) {
+    conceito= "ótimo"
+}
+else if (media >= 6.5) {
+    conceito="bom"
+}
+else {
+    conceito="regular"
+}
+console.log(media +" "+ conceito);
+switch(conceito) {
+    case "ótimo":
+    console.log("Parabéns")
+    break
+    case "bom":
+        console.log("Está indo bem.")
+    break
+    
+    case "regular":
+        console.log("Você precisa melhorar.")
+    break
+    
+}
+```
+- É essencial que em "case" esteja escrito exatamente igual ao mencionado elemento para funcionar 
+
+For e while(for)
+
+```
+var numero = 5;                                       
+for (var i = 0; i <= 5; i++) {
+    console.log("executando " + i + "x")
+}
+console.log("end game")
+
+ executando 0x 
+ executando 1x 
+ executando 2x 
+ executando 3x 
+ executando 4x 
+ end game
+
+```
+
+```
+var numero = 5;
+while (numero <= 10){
+    console.log("Número " + numero)
+    numero++
+ }
+ console.log("acabou")
+
+ Número 5
+ Número 6
+ Número 7
+ Número 8
+ Número 9
+ Número 10
+ acabou
+```
+
+```
+var numero = Math.random() *100;
+console.log(numero);
+while (numero <= 90){
+   
+    console.log(numero)
+    numero = Math.random() *100;
+}
+console.log(numero)
+console.log("acabou")
+
+ 88.20460766248355
+ 88.20460766248355
+ 2.502231016723111
+ 41.30197232912276
+ 32.45007082845754
+ 83.83095172225549
+ 87.8207492342878
+ 52.82837978825754
+ 36.8607071087496
+ 97.33677060837631
+ acabo
+```
